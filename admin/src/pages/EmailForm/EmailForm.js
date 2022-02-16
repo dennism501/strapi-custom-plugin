@@ -45,8 +45,8 @@ const EmailForm = () => {
       <br />
         <Typography variant="beta">Custom Email Plugin</Typography>
         <Divider />
-    
-        <Stack size={4} background="primary100" padding={3} margin={3}>
+        <br />
+        <Stack size={4} background="primary100" padding={3}>
           <TextInput
             name="email-address"
             label="Email"
