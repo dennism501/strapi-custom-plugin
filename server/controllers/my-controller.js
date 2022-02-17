@@ -3,7 +3,7 @@
 module.exports = {
   index(ctx) {
     ctx.body = strapi
-      .plugin('custom-email')
+      .plugin('custom-plugin')
       .service('myService')
       .getWelcomeMessage();
   },
@@ -12,7 +12,7 @@ module.exports = {
     const subject = ctx.request.body.subject;
     const content = ctx.request.body.content;
     await strapi
-      .plugin('custom-email')
+      .plugin('custom-plugin')
       .service('myService')
       .sendEmail(emailAddress, subject, content);
 

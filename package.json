@@ -1,5 +1,5 @@
 {
-  "name": "custom-email",
+  "name": "custom-plugin",
   "version": "0.0.0",
   "description": "This is the description of the plugin.",
   "strapi": {
@@ -9,11 +9,11 @@
   },
   "dependencies": {},
   "author": {
-    "name": "A Strapi developer"
+    "name": "Dennis Mubamba"
   },
   "maintainers": [
     {
-      "name": "A Strapi developer"
+      "name": "Dennis Mubamba"
     }
   ],
   "engines": {
