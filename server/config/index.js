@@ -1,6 +1,11 @@
-'use strict';
+"use strict";
 
 module.exports = {
-  default: {},
+  default: {
+    additionalFields: [],
+    contentTypes: [],
+    contentTypesNameFields: {},
+    allowedLevels: 2,
+  },
   validator() {},
 };

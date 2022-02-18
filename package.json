@@ -9,7 +9,14 @@
     "kind": "plugin"
   },
   "dependencies": {
-    "axios": "^0.26.0"
+    "axios": "^0.26.0",
+    "styled-components": "^5.3.3",
+    "@strapi/design-system": "^0.0.1-alpha.75",
+    "@strapi/icons": "^0.0.1-alpha.75",
+    "react-router-dom": "^6.2.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router": "^5.0.0"
   },
   "author": {
     "name": "Dennis Mubamba"
