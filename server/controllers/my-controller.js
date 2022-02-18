@@ -12,7 +12,7 @@ module.exports = {
     const subject = ctx.request.body.subject;
     const content = ctx.request.body.content;
     await strapi
-      .plugin('custom-plugin')
+      .plugin('custom-email')
       .service('myService')
       .sendEmail(emailAddress, subject, content);
 
