@@ -3,7 +3,7 @@
 module.exports = {
   index(ctx) {
     ctx.body = strapi
-      .plugin('custom-plugin')
+      .plugin('custom-email')
       .service('myService')
       .getWelcomeMessage();
   },
