@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "description": "This is the description of the plugin.",
   "strapi": {
-    "name": "Custom-Email",
-    "description": "Description of Custom-Email plugin",
+    "name": "custom-email",
+    "displayName": "Custom-Email",
+    "description": "This is a custom email plugin for the strapi admin panel",
     "kind": "plugin"
   },
   "dependencies": {
