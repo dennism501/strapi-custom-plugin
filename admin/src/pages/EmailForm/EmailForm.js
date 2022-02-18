@@ -18,7 +18,8 @@ const EmailForm = () => {
     content: '',
   });
   const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState(false)
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
 
   async function handleSendEmail() {
     setLoading(true);
@@ -29,20 +30,30 @@ const EmailForm = () => {
         content: emailDetails.content,
       });
       console.log(data);
-      if (data){
-        setSuccess(true)
-        setLoading(false);}
+      if (data) {
+        setSuccess(true);
+        setLoading(false);
+      }
     } catch (error) {
       setLoading(false);
-      console.error(error);
+      setError(!error);
+      console.error("Sending error: ",error);
     }
   }
 
   return (
     <div>
       <Box padding={10}>
-      {success && <Alert closeLabel="Close alert" title="Title" variant="success">Email has been sent!.</Alert>}
-      <br />
+        {success && (
+          <Alert
+            closeLabel="Close alert"
+            title={!error ? "Success" : "Error" }
+            variant={!error ? 'success' : 'danger'}
+          >
+            {!error ? "Email has been sent!." : "Something went wrong!"}
+          </Alert>
+        )}
+        <br />
         <Typography variant="beta">Custom Email Plugin</Typography>
         <Divider />
         <br />

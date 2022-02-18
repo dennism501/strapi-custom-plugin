@@ -7,15 +7,24 @@
     "description": "Description of Custom-Email plugin",
     "kind": "plugin"
   },
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.26.0"
+  },
   "author": {
     "name": "Dennis Mubamba"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dennism501/strapi-custom-plugin"
   },
   "maintainers": [
     {
       "name": "Dennis Mubamba"
     }
   ],
+  "peerDependencies": {
+    "@strapi/strapi": "4.x"
+  },
   "engines": {
     "node": ">=12.x. <=16.x.x",
     "npm": ">=6.0.0"

@@ -6,7 +6,7 @@ module.exports = ({ strapi }) => ({
   },
 
   async sendEmail(emailAddress, subject, content) {
-    await strapi.plugin('email').service('email').send({
+    await strapi.plugins['email'].services.email.send({
       to: emailAddress,
       from: 'admin@strapi.io',
       subject,
